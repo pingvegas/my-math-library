@@ -2,9 +2,7 @@
 
 function sum(a,b){
     if(Array.isArray(a)){
-        let total = 0 
-        a.forEach((n)=>(total+=n))
-        return total
+       return a.reduce((total,n)=>total + n , 0)
     }
 
     return a+b
